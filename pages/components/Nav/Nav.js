@@ -4,6 +4,7 @@ import styles from './Nav.module.css';
 
 export default function Nav(){
 	const [total, setTotal] = useState(0);
+	const [invisible, setInvisible] = useState(false);
   useEffect(() => {
     if (window.Snipcart) {
       setTotal(Snipcart.store.getState().cart.total);
@@ -15,8 +16,18 @@ export default function Nav(){
 				<div className={styles.logo}>
 		<i className="fi fi-rr-menu-burger"></i>
 		<img src="/images/eula.jpg"/>
-				
+					<div className={styles.search}>
+				<i className="fi fi-rr-search" onClick={() => setInvisible(current =>! current)} style={{"display":invisible? "none":"block"}}></i>
+				<input type="text" placeholder="search" style={{"width":invisible? "100%":"0","opacity":invisible? "100%":"0"}} />
+						<i className="fi fi-rr-angle-right" onClick={() => setInvisible(current =>! current)} style={{"display":invisible? "block":"none"}}></i>
+					</div>
 			</div>
+				<ul>
+					<li><a>Home</a></li>
+					<li><a>Products</a></li>
+					<li><a>About</a></li>
+					<li><a>Featured</a></li>
+				</ul>
 			<p className={styles.description}>
           <a
             className="snipcart-checkout snipcart-summary"
@@ -32,22 +43,8 @@ export default function Nav(){
 						<i className="fi fi-rr-shopping-cart"></i>
           </a>
         </p>
+				
 			</div>
-			<input type="text" placeholder="search"/>
-			<div className={styles.second}>
-				<ul>
-					<li><a href="#">Deals</a></li>
-					<li><a href="#">Featured</a></li>
-					<li><a href="#">Best Sellers</a></li>
-					<li><a href="#">Video</a></li>
-					<li><a href="#">Books</a></li>
-					<li><a href="#">Livestreams</a></li>
-					<li><a href="#">New Releases</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Gift Cards</a></li>
-				</ul>
-			</div>        
-		
 		</nav>
 	)
 };

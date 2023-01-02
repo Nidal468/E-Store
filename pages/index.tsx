@@ -18,8 +18,28 @@ const Home: NextPage = () => {
 			<Nav/>
       <main className={styles.main}>
 				<div className={styles.hero}>
-					<h2>Fortitude</h2>
-					<p>Top quality products from all around the world</p>
+					<img src=""/>
+					<div className={styles.text}>
+					<h1>Fortitude</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis at augue ut sagittis. Praesent fermentum pharetra odio, eu viverra ex tempus sed. Maecenas quis auctor est. Integer facilisis nec turpis a venenatis. Ut lacinia blandit pretium. Sed blandit magna urna, in suscipit nisl convallis et. Pellentesque quis tellus nec dolor interdum suscipit bibendum nec eros.</p>
+					<a href="">sign up</a>
+					</div>
+					<div className={styles.box}>
+						<ul>
+							<li>
+								<h4>Events</h4>
+								<p>Follow this link to confirm</p>
+						</li>
+						<li>
+								<h4>Events</h4>
+								<p>Follow this link to confirm</p>
+						</li>
+						<li>
+								<h4>Events</h4>
+								<p>Follow this link to confirm</p>
+						</li>
+						</ul>
+				</div>
 				</div>
         <div className={styles.grid}>
   {products.map(product => {
