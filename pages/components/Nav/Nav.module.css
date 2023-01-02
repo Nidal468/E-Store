@@ -1,0 +1,56 @@
+.nav{
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #333;
+	flex-direction: column;
+	font-family: 'Oswald', sans-serif;
+}
+.first{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.logo{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100px;
+	padding: 10px;
+}
+
+.nav img{
+	width: 40px;
+	border-radius: 50%;
+	
+}
+.nav input{
+	width: 300px;
+	height: 30px;
+	border-radius: 18px;
+	padding: 5px 10px;
+	border: 0;
+	
+}
+.second{
+	width: 100%;
+	overflow-x: scroll;
+}
+.second ul{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 800px;
+	height: 30px;
+	
+}
+.second ul li{
+	font-size: 15px;
+	
+	
+}

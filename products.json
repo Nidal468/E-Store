@@ -1,13 +1,30 @@
 [
-	{  "title": "Snipcart Logo Sticker",
-  "id": "sticker_logo",
+	{
+	"title": "Snipcart Logo Sticker",
+  "id": "sicker_logo",
   "description": "Show off your Snipcart support with a logo sticker!",
-  "price": "2.00" 
+  "price": "2.00", 
+	"image": "/images/Fiverr-Logo.png"	
 	}, 
 	{
-		"title": "Snipcart Logo Sticker Pack",
-  "id": "sticker_logo_pack",
+	"title": "Spcart Logo Sticker Pack",
+  "id": "scker_logo_pack",
   "description": "Get a pack of 3 Snipcart logo stickers.",
-  "price": "4.00"
-	} 
+  "price": "4.00", 
+	"image": "/images/Fiverr-Logo.png"
+	}, 
+	{
+	"title": "Snipcar Logo Sticker Pack",
+  "id": "ker_logo_pack",
+  "description": "Get a pack of 3 Snipcart logo stickers.",
+  "price": "4.00", 
+	"image": "/images/Fiverr-Logo.png"
+	}, 
+	{
+	"title": "Snpcart Logo Sticker Pack",
+  "id": "stick_logo_pack",
+  "description": "Get a pack of 3 Snipcart logo stickers.",
+  "price": "4.00", 
+	"image": "/images/Fiverr-Logo.png"
+	}
 ]
