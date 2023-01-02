@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 			<Nav/>
       <main className={styles.main}>
 				<div className={styles.hero}>
-					<img src=""/>
+					<img src="images/iphone001.png"/>
 					<div className={styles.text}>
 					<h1>Fortitude</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis at augue ut sagittis. Praesent fermentum pharetra odio, eu viverra ex tempus sed. Maecenas quis auctor est. Integer facilisis nec turpis a venenatis. Ut lacinia blandit pretium. Sed blandit magna urna, in suscipit nisl convallis et. Pellentesque quis tellus nec dolor interdum suscipit bibendum nec eros.</p>
@@ -28,15 +28,16 @@ const Home: NextPage = () => {
 						<ul>
 							<li>
 								<h4>Events</h4>
-								<p>Follow this link to confirm</p>
-						</li>
+								<p style={{"color":"#EAEFF2"}} >Winter Special</p>
+								<h5>SF-TUS,JANUARY 3/1-6 PM</h5>
+							</li>
 						<li>
-								<h4>Events</h4>
-								<p>Follow this link to confirm</p>
-						</li>
+								<p style={{"color":"#EAEFF2"}} >New Year Special</p>
+								<h5>SF-TUS,JANUARY 1/1-6 PM</h5>
+							</li>
 						<li>
-								<h4>Events</h4>
-								<p>Follow this link to confirm</p>
+								<h4>News</h4>
+								<p>The latest version of Iphone just got officially released yesterday</p>
 						</li>
 						</ul>
 				</div>
