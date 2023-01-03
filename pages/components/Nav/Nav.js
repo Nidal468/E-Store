@@ -2,8 +2,9 @@ import {useState, useEffect} from 'react';
 
 import styles from './Nav.module.css';
 
-export default function Nav(){
+export function Nav(){
 	const [total, setTotal] = useState(0);
+	const [menu, setMenu] = useState(false)
 	const [invisible, setInvisible] = useState(false);
   useEffect(() => {
     if (window.Snipcart) {
@@ -11,10 +12,11 @@ export default function Nav(){
     }
   });
 	return(
+		<div>
 		<nav className={styles.nav}>
 			<div className={styles.first}>
 				<div className={styles.logo}>
-		<i className="fi fi-rr-menu-burger"></i>
+		<i className="fi fi-rr-menu-burger" onClick={() => setMenu(current =>! current)} style={{"z-index":"25"}}></i>
 		<img src="/images/eula.jpg"/>
 					<div className={styles.search}>
 				<i className="fi fi-rr-search" onClick={() => setInvisible(current =>! current)} style={{"display":invisible? "none":"block"}}></i>
@@ -46,5 +48,27 @@ export default function Nav(){
 				
 			</div>
 		</nav>
+			<Menu slide={menu? "0px":"-1000px"}/>
+		</div>
 	)
 };
+export function Menu(props){
+	return(
+		<div className={styles.menu} style={{"left":props.slide}}>
+		<img src="images/eula.jpg"/>
+			<ul>
+				<li><h4>Menu</h4></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Designs</a></li>
+				<li><a href="#">Order</a></li>
+				<li><a href="#">About Us</a></li>
+			</ul>
+			<ul>
+				<li><h4>home</h4></li>
+				<li><a href="#">home</a></li>
+				<li><a href="#">home</a></li>
+				<li><a href="#">home</a></li>
+			</ul>
+		</div>
+	)
+}

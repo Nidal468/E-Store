@@ -3,7 +3,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import products from '../products.json'; 
 
-import Nav from './components/Nav/Nav.js';
+import {Nav} from './components/Nav/Nav.js';
+
 
 
 import styles from '../styles/Home.module.css'
@@ -46,7 +47,7 @@ const Home: NextPage = () => {
   {products.map(product => {
     return (
       <div key={product.id} className={styles.card}>
-				<img src={product.image} alt={`Preview of ${product.title}`} />
+				<img src={product.image}/>
         <h3>{ product.title }</h3>
         <p>{ product.description }</p>
         <p>${ product.price }</p>

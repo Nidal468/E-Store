@@ -59,3 +59,52 @@
 	font-size: 12px;
 	
 }
+.first ul li:hover{
+	border-bottom: 1px solid #fff;
+	
+}
+.menu{
+	position: absolute;
+	top: 0;
+	width: 250px;
+	height: 800px;
+	background: rgba(255, 255, 255, 0.18);
+	z-index: 20;
+	transition: 1s;
+	border-top-right-radius: 16px;
+	border-bottom-right-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.3px);
+	-webkit-backdrop-filter: blur(6.3px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding: 20px;
+	
+}
+.menu img{
+	width: 50px;
+	border-radius: 50%;
+	
+}
+.menu ul{
+	list-style: none;
+	width: 100%;
+	color: #fff;
+	margin: 10px 0px;
+	display: flex;
+	align-items: left;
+	flex-direction: column;
+	font-size: 18px;
+	font-family: 'Roboto Condensed', sans-serif;
+	background: #333;
+	padding: 10px;
+	border-radius: 14px;
+}
+.menu ul li{
+	margin: 8px 0px;
+	
+	
+}
