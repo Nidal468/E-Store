@@ -3,14 +3,15 @@
 }
 
 .main {
-  min-height: 100vh;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  min-height: 200vh;
+	width: 100%;
 }
-
+.main h5{
+	text-align: left;
+	width: 100%;
+	padding: 10px 20px;
+	
+}
 .footer {
   display: flex;
   flex: 1;
@@ -30,12 +31,13 @@
 .hero{
 	background: linear-gradient(#333, #111);
 	width: 100%;
-	min-height: 80vh;
+	height: 400px;
 	color: #fff;
 	font-family: 'Poppins';
 	font-size: 10px;
 	font-weight: 400;
 	padding-top: 80px;
+	
 }
 .hero img{
 	width: 30%;
@@ -88,53 +90,126 @@
 	color: #fff;
 	z-index: 5;
 	
-}
-
+}	
+.bar{
+	width: 100%;
+	height: 80px;
+	padding: 5px 10px;
+	color: #333;
+	position: relative;
+	top: 50px;
+	z-index: 8;
 	
-
+	
+}
+.bar_list{
+	width: 100%;
+	height: 100%;
+	color: #000;
+	background: rgba(227, 237, 247, 0.25);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.5px);
+	-webkit-backdrop-filter: blur(3.5px);
+	border: 1px solid #111;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	
+}
 .grid {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   width: 100%;
-	height: 800px;
+	height: 420px;
+	position: relative;
+	top: 140px;
+	flex-wrap: wrap;
+	
 }
 
 .card {
-  margin: 1rem;
+  margin: 0rem 1rem;
   padding: 1.5rem;
   text-align: left;
   color: #333;
   text-decoration: none;
-  max-width: 200px;
-	height: 350px;
+  width: 200px;
+  height: 400px;
   background: rgba(227, 237, 247, 0.25);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(3.5px);
--webkit-backdrop-filter: blur(3.5px);
-border: 1px solid rgba(227, 237, 247, 0.45);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.5px);
+	-webkit-backdrop-filter: blur(3.5px);
+	border: 1px solid #111;
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	flex-direction: column;
+	
 }
 .card img{
-	width: 40%;
+	width: 60%;
 	
 }
 .card h2 {
-  margin: 0 0 1rem 0;
+  margin: 5px 0px;
   font-size: 1.5rem;
 }
 
 .card p {
-  margin: 20px 0px;
+  margin: 10px 0px;
   font-size: 1.25rem;
-  line-height: 1.5;
+  width: 100%;
+  height: 60px;
+  
+}
+.card h5{
+	width: 100%;
+	position: relative;
+	right: 20px;
+	color: #359;
+	
 }
 .card button{
 	background: #333;
 	border-radius: 12px;
 	color: #fff;
 	padding: 5px 15px;
+	border: 0;
+	
+}
+.categories{
+	width: 98%;
+	height: 340px;
+	padding: 10px;
+	display: flex;
+	align-items: top;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: relative;
+	top: 220px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.categories_body{
+	width: 150px;
+	height: 150px;
+	background: #fff;
+	color: #333;
+	padding: 10px;
+	border: 1px solid #000;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+.categories_body img{
+	width: 50%;
 	
 }
 .logo {
@@ -143,10 +218,6 @@ border: 1px solid rgba(227, 237, 247, 0.45);
 }
 
 @media (min-width: 576px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 	.card h2{
 		font-size: 1rem;
 		
