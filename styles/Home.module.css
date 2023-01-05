@@ -212,10 +212,7 @@
 	width: 50%;
 	
 }
-.logo {
-  height: 1em;
-  margin-left: 0.2rem;
-}
+
 
 @media (min-width: 576px) {
 	.card h2{

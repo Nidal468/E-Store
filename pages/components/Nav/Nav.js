@@ -11,12 +11,18 @@ export function Nav(){
       setTotal(Snipcart.store.getState().cart.total);
     }
   });
+	function Hamburger() {
+		setMenu(current =>! current);
+	};
+	
 	return(
 		<div>
 		<nav className={styles.nav}>
 			<div className={styles.first}>
 				<div className={styles.logo}>
-		<i className="fi fi-rr-menu-burger" onClick={() => setMenu(current =>! current)} style={{"z-index":"25"}}></i>
+		<div className={menu? styles.close:""}>
+			 <span onClick={Hamburger}  className={styles.hamburger}></span>
+				 </div>
 		<img src="/images/eula.jpg"/>
 					<div className={styles.search}>
 				<i className="fi fi-rr-search" onClick={() => setInvisible(current =>! current)} style={{"display":invisible? "none":"block"}}></i>
@@ -27,8 +33,11 @@ export function Nav(){
 				<ul>
 					<li><a>Home</a></li>
 					<li><a>Products</a></li>
-					<li><a>About</a></li>
+					<li><a>Best Sellers</a></li>
 					<li><a>Featured</a></li>
+					<li><a>Customer Care</a></li>
+					<li><a>New Releases</a></li>
+					<li><a>Gift Cards</a></li>
 				</ul>
 			<p className={styles.description}>
           <a
@@ -48,27 +57,53 @@ export function Nav(){
 				
 			</div>
 		</nav>
-			<Menu slide={menu? "0px":"-1000px"}/>
+			<Menu useState={menu}/>
 		</div>
 	)
 };
 export function Menu(props){
+
+	const title1 = "Products";
+	const des1 = "We have top class products in the world";
+	const [title, setTitle] = useState(title1);
+	const [des, setDes] = useState(des1);
+	const [position, setPosition] = useState("20px");
+	function Option() {
+		setPosition("20px");
+		setTitle(title1);
+		setDes(des1);
+	}
+	function Option1() {
+	  setPosition("90px");
+		setTitle("Books");
+		setDes("We have the best books for you to read");
+	}
+	function Option2() {
+	  setPosition("160px");
+		setTitle("Phones");
+		setDes("We have the best Iphones for you to spend your money on");
+						}
+	function Option3() {
+	  setPosition("230px");
+		setTitle("Watchs");
+		setDes("We have the best Watchs to keep a watch on you");
+	}
+	
+	
+	
 	return(
-		<div className={styles.menu} style={{"left":props.slide}}>
-		<img src="images/eula.jpg"/>
-			<ul>
-				<li><h4>Menu</h4></li>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Designs</a></li>
-				<li><a href="#">Order</a></li>
-				<li><a href="#">About Us</a></li>
-			</ul>
-			<ul>
-				<li><h4>home</h4></li>
-				<li><a href="#">home</a></li>
-				<li><a href="#">home</a></li>
-				<li><a href="#">home</a></li>
-			</ul>
-		</div>
+		 <div className={props.useState? styles.menu_body:styles.block}>
+			 
+				 <div className={styles.menu}>
+					 <i className="fi fi-rr-home" onClick={Option}></i>
+					 <i className="fi fi-rr-home" onClick={Option1}></i>
+					 <i className="fi fi-rr-home" onClick={Option2}></i>
+					 <i className="fi fi-rr-home" onClick={Option3}></i>
+				 </div>
+			 <div className={styles.list} style={{"top":position}}>
+				 <p>{title}</p>
+				 <p>{des}</p>
+			 </div>
+		 </div>
 	)
 }
