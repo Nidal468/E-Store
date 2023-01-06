@@ -4,69 +4,69 @@
   "id": "Iphone_10",
   "description": "iPhone X is available in silver and space gray in 64GB and 256GB models",
   "price": "999", 
-	"image": "/images/600px.png"	
+	"image": "/images/001.png"	
 	}, 
 	{
 	"title": "Iphone 12",
   "id": "Iphone_12",
   "description": "The iPhone 12 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle.",
   "price": "649", 
-	"image": "/images/600px.png"	
+	"image": "/images/002.png"	
 	}, 
 	{
 	"title": "Iphone 13",
   "id": "Iphone_13",
   "description": "The iPhone 12 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle.",
   "price": "899", 
-	"image": "/images/600px.png"	
+	"image": "/images/003.png"	
 	}, 
 	{
 	"title": "Iphone 14",
   "id": "Iphone_14",
   "description": "The iPhone 12 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle.",
   "price": "1999", 
-	"image": "/images/600px.png"	
+	"image": "/images/003.png"	
 	}, 
   {
 	"title": "Iphone 14",
   "id": "Iphone_15",
   "description": "The iPhone 12 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle.",
   "price": "1999", 
-	"image": "/images/600px.png"	
+	"image": "/images/002.png"	
 	}, 
 	{
 	"title": "Iphone 14",
   "id": "Iphone_16",
   "description": "The iPhone 12 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle.",
   "price": "1999", 
-	"image": "/images/600px.png"	
+	"image": "/images/001.png"	
 	}, 
 	{
 	"title": "Iphone 14",
   "id": "Iphone_17",
   "description": "The iPhone 12 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle.",
   "price": "1999", 
-	"image": "/images/600px.png"	
+	"image": "/images/002.png"	
 	}, 
   {
 	"title": "Iphone 14",
   "id": "Iphone_18",
   "description": "The iPhone 12 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle.",
   "price": "1999", 
-	"image": "/images/600px.png"	
+	"image": "/images/003.png"	
 	}, 
   {
 	"title": "Iphone 14",
   "id": "Iphone_19",
   "description": "The iPhone 12 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle.",
   "price": "1999", 
-	"image": "/images/600px.png"	
+	"image": "/images/001.png"	
 	}, 
   {
 	"title": "Iphone 14",
   "id": "Iphone_20",
   "description": "The iPhone 12 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle.",
   "price": "1999", 
-	"image": "/images/600px.png"	
+	"image": "/images/002.png"	
 	} 
 ]

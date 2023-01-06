@@ -23,10 +23,11 @@ const Home: NextPage = () => {
       <main className={styles.main}>
 				<Nav/>
 				<div className={styles.hero}>
-					<img src="images/iphone001.png"/>
+					<img src="images/001.png"/>
 					<div className={styles.text}>
-					<h1>Fortitude</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis at augue ut sagittis. Praesent fermentum pharetra odio, eu viverra ex tempus sed. Maecenas quis auctor est. Integer facilisis nec turpis a venenatis. Ut lacinia blandit pretium. Sed blandit magna urna, in suscipit nisl convallis et. Pellentesque quis tellus nec dolor interdum suscipit bibendum nec eros.</p>
+					<h1>Why Apple is the best place to buy iPhone.</h1>
+					<p>You can choose a payment option that works for you, pay less with a trade‑in, connect your new iPhone to your carrier, and get set up quickly.
+You can also chat with a Specialist anytime.</p>
 					<a href="">sign up</a>
 					</div>
 					<div className={styles.box}>
@@ -118,7 +119,8 @@ const Home: NextPage = () => {
     );
   })}
 </div>
-      </main>			
+      </main>
+			<footer className={styles.footer}><a>Build by Fate</a></footer>
     </div>
   )
 }

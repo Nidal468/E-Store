@@ -23,7 +23,7 @@ export function Nav(){
 		<div className={menu? styles.close:""}>
 			 <span onClick={Hamburger}  className={styles.hamburger}></span>
 				 </div>
-		<img src="/images/eula.jpg"/>
+		<img src="/images/logo.png"/>
 					<div className={styles.search}>
 				<i className="fi fi-rr-search" onClick={() => setInvisible(current =>! current)} style={{"display":invisible? "none":"block"}}></i>
 				<input type="text" placeholder="search" style={{"width":invisible? "100%":"0","opacity":invisible? "100%":"0"}} />
@@ -63,30 +63,24 @@ export function Nav(){
 };
 export function Menu(props){
 
-	const title1 = "Products";
-	const des1 = "We have top class products in the world";
+	const title1 = "Health & Beauty";
 	const [title, setTitle] = useState(title1);
-	const [des, setDes] = useState(des1);
-	const [position, setPosition] = useState("20px");
+	const [position, setPosition] = useState("22px");
 	function Option() {
-		setPosition("20px");
+		setPosition("22px");
 		setTitle(title1);
-		setDes(des1);
 	}
 	function Option1() {
 	  setPosition("90px");
-		setTitle("Books");
-		setDes("We have the best books for you to read");
+		setTitle("Home & Lifestyle");
 	}
 	function Option2() {
 	  setPosition("160px");
-		setTitle("Phones");
-		setDes("We have the best Iphones for you to spend your money on");
+		setTitle("Sports & Outdoor");
 						}
 	function Option3() {
 	  setPosition("230px");
-		setTitle("Watchs");
-		setDes("We have the best Watchs to keep a watch on you");
+		setTitle("Watch & Phone");
 	}
 	
 	
@@ -95,14 +89,13 @@ export function Menu(props){
 		 <div className={props.useState? styles.menu_body:styles.block}>
 			 
 				 <div className={styles.menu}>
-					 <i className="fi fi-rr-home" onClick={Option}></i>
+					 <i className="fi fi-rr-pharmacy" onClick={Option}></i>
 					 <i className="fi fi-rr-home" onClick={Option1}></i>
-					 <i className="fi fi-rr-home" onClick={Option2}></i>
-					 <i className="fi fi-rr-home" onClick={Option3}></i>
+					 <i class="fi fi-rr-volleyball" onClick={Option2}></i>
+					 <i class="fi fi-rr-mobile-button" onClick={Option3}></i>
 				 </div>
 			 <div className={styles.list} style={{"top":position}}>
 				 <p>{title}</p>
-				 <p>{des}</p>
 			 </div>
 		 </div>
 	)

@@ -1,50 +1,50 @@
 [
 	{
-		"image":"/images/600px.png", 
-		"name":"T-Shirt" 
+		"image":"/images/004.png", 
+		"name":"Ear Pods" 
 	}, 
 	{
-		"image":"/images/600px.png", 
-		"name":"T-Shirt" 
+		"image":"/images/005.png", 
+		"name":"Smart Watch" 
 	}, 
 	{
-		"image":"/images/600px.png", 
-		"name":"T-Shirt" 
+		"image":"/images/006.png", 
+		"name":"Laptop" 
 	}, 
 	{
-		"image":"/images/600px.png", 
-		"name":"T-Shirt" 
+		"image":"/images/007.png", 
+		"name":"Tablet" 
 	}, 
 	{
-		"image":"/images/600px.png", 
-		"name":"T-Shirt" 
+		"image":"/images/004.png", 
+		"name":"Ear Pods" 
 	}, 
 	{
-		"image":"/images/600px.png", 
-		"name":"T-Shirt" 
+		"image":"/images/005.png", 
+		"name":"Smart Watch" 
 	}, 
 	{
-		"image":"/images/600px.png", 
-		"name":"T-Shirt" 
+		"image":"/images/006.png", 
+		"name":"Laptop" 
 	}, 
 	{
-		"image":"/images/600px.png", 
-		"name":"T-Shirt" 
+		"image":"/images/007.png", 
+		"name":"Tablet" 
+	},
+	{
+		"image":"/images/004.png", 
+		"name":"Ear Pods" 
 	}, 
 	{
-		"image":"/images/600px.png", 
-		"name":"T-Shirt" 
+		"image":"/images/005.png", 
+		"name":"Smart Watch" 
 	}, 
 	{
-		"image":"/images/600px.png", 
-		"name":"T-Shirt" 
-	}, 
+		"image":"/images/007.png", 
+		"name":"Tablet" 
+	},
 	{
-		"image":"/images/600px.png", 
-		"name":"T-Shirt" 
-	}, 
-	{
-		"image":"/images/600px.png", 
-		"name":"T-Shirt" 
+		"image":"/images/004.png", 
+		"name":"Ear Pods" 
 	}
 ]
