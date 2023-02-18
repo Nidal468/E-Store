@@ -3,8 +3,13 @@
 }
 
 .main {
-  height: 200vh;
+  min-height: 100vh;
 	width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
 }
 .main h5{
 	text-align: left;
@@ -17,8 +22,9 @@
 	height: 80px;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
-  position: relative;
-  top: 2300px;
+  margin: 50px 0px;
+  
+  
   
 }
 
@@ -31,7 +37,6 @@
 .hero{
 	background: linear-gradient(#333, #111);
 	width: 100%;
-	height: 400px;
 	color: #fff;
 	font-family: 'Poppins';
 	font-size: 10px;
@@ -96,9 +101,7 @@
 	height: 80px;
 	padding: 5px 10px;
 	color: #333;
-	position: relative;
-	top: 50px;
-	z-index: 8;
+	margin: 40px 0px;
 	
 	
 }
@@ -119,19 +122,17 @@
 }
 .grid {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   justify-content: space-evenly;
   width: 100%;
-	height: 420px;
-	position: relative;
-	top: 140px;
 	flex-wrap: wrap;
+	margin: 80px 0px;
 	
 }
 
 .card {
-  margin: 0rem 1rem;
-  padding: 1.5rem;
+  margin: 10px;
+  padding: 15px;
   text-align: left;
   color: #333;
   text-decoration: none;
@@ -155,12 +156,10 @@
 }
 .card h2 {
   margin: 5px 0px;
-  font-size: 1.5rem;
 }
 
 .card p {
   margin: 10px 0px;
-  font-size: 1.25rem;
   width: 100%;
   height: 60px;
   
@@ -181,17 +180,12 @@
 	
 }
 .categories{
-	width: 98%;
-	height: 340px;
+	width: 100%;
 	padding: 10px;
 	display: flex;
-	align-items: top;
-	justify-content: space-between;
+	align-items: flex-start;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
-	position: relative;
-	top: 220px;
-	margin-left: auto;
-	margin-right: auto;
 	
 }
 .categories_body{
@@ -206,6 +200,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	margin: 10px;
 	
 }
 .categories_body img{
@@ -213,17 +208,45 @@
 	
 }
 
-@media (min-width: 576px) {
-	.card h2{
-		font-size: 1rem;
+@media only screen and (max-width: 576px) {
+	.hero{
+		font-size: 6px;
+		font-weight: 400;
+		padding-top: 50px;
 		
 	}
-	.card p {
-  font-size: 0.75rem;
-  line-height: 1;
+	.box{
+		height: 90px;
+		font-size: 5px;
+		
 	}
-	.logo {
-  height: 0.5em;
-  
+	.box ul li{
+		padding: 0px;
+		margin: 0px 0px;
+		
+	}
+  .bar{
+	 height: 50px;
+	 font-size: 8px;
+	 
+  }
+	.card{
+		width: 150px;
+		height: 250px;
+		font-size: 8px;
+		
 	} 
+  .grid{
+		
+	}
+	.card button{
+		padding: 2px 5px;
+		border-radius: 8px;
+		font-size: 6px;
+		
+	}
+	.categories{
+		
+									 
+	}
 }

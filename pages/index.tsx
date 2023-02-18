@@ -75,7 +75,7 @@ You can also chat with a Specialist anytime.</p>
     );
   })}
 </div>
-				<div className={styles.bar} style={{"top":"140px"}}>
+				<div className={styles.bar}>
 					<h2>Categories</h2>
 					<div className={styles.bar_list}>
 					<h4>Best of 2022</h4>
@@ -92,14 +92,14 @@ You can also chat with a Specialist anytime.</p>
 			);
 					})}
 				</div>
-				<div className={styles.bar} style={{"top":"200px"}}>
+				<div className={styles.bar}>
 					<h2>Categories</h2>
 					<div className={styles.bar_list}>
 					<h4>Best of 2022</h4>
 						<a>View more</a>
 					</div>
 				</div>
-				<div className={styles.grid} style={{"height":"1260px", "top":"300px"}}>
+				<div className={styles.grid}>
   {recommended.map(recommended => {
     return (
       <div key={recommended.id} className={styles.card}>
